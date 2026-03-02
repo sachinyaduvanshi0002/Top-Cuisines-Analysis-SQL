@@ -1,5 +1,3 @@
-<img width="1920" height="1080" alt="Screenshot 2026-03-02 123600" src="https://github.com/user-attachments/assets/330129bc-1ef1-42c9-9ce8-f934d1c800db" /># 🍽️ Top Cuisines Analysis (SQL) — Cognifyz Technologies Internship
-
 ## 📌 Project Overview
 This project analyzes restaurant data to identify the **top five most common cuisines** and calculate the **percentage of restaurants serving each cuisine**.
 
