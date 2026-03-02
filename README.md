@@ -1,4 +1,4 @@
-# 🍽️ Top Cuisines Analysis (SQL) — Cognifyz Technologies Internship
+<img width="1920" height="1080" alt="Screenshot 2026-03-02 123600" src="https://github.com/user-attachments/assets/330129bc-1ef1-42c9-9ce8-f934d1c800db" /># 🍽️ Top Cuisines Analysis (SQL) — Cognifyz Technologies Internship
 
 ## 📌 Project Overview
 This project analyzes restaurant data to identify the **top five most common cuisines** and calculate the **percentage of restaurants serving each cuisine**.
@@ -58,24 +58,5 @@ The dataset contains information about restaurants, including:
 
 ---
 
-## 🧮 Key SQL Logic
-
-```sql
-WITH split_data AS (
-    SELECT TRIM(unnest(string_to_array(cuisines, ','))) AS cuisine
-    FROM restaurants
-),
-total AS (
-    SELECT COUNT(*) AS total_restaurants FROM restaurants
-)
-SELECT
-    cuisine,
-    COUNT(*) AS total_count,
-    ROUND(100.0 * COUNT(*) / (SELECT total_restaurants FROM total), 2) AS percentage
-FROM split_data
-GROUP BY cuisine
-ORDER BY total_count DESC
-LIMIT 5;
-
-<img width="1920" height="1080" alt="Screenshot 2026-03-02 123617" src="https://github.com/user-attachments/assets/553f6ef4-dab4-4db7-8172-18c5f3ece876" />
-<img width="1920" height="1080" alt="Screenshot 2026-03-02 123600" src="https://github.com/user-attachments/assets/a19e03e2-22c7-4129-912c-9ecaeeff8114" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-02 123617" src="https://github.com/user-attachments/assets/d32c7135-d66f-49ba-b608-0c7006c5450f" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-02 123600" src="https://github.com/user-attachments/assets/3d608f40-422e-4369-aa25-5d5e80c5e74c" />
